@@ -4,8 +4,9 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-
-var content = {
+var articles = {
+    
+ content : {
     title: 'y should u cry4crey',
     heading: 'sermons of leo',
     date: 'aug 5, 1998',
@@ -14,6 +15,25 @@ var content = {
             </p>
             <p>this is the content of my first article.this is the content of my first article.this is the content of my first article.this is the content of my first article.this is the content of my first article.this is the content of my first article.</p>
             <p>this is the content of my first article.this is the content of my first article.this is the content of my first article.this is the content of my first article.this is the content of my first article.</p>`
+},
+ content2 : {
+    title: 'y should u cry4crey',
+    heading: 'sermons of leo',
+    date: 'aug 5, 1998',
+    content:` <p>
+                this is the content of my first article.this is the content of my first article.this is the content of my first article.this is the content of my first article.
+            </p>
+            <p>this is the content of my first article.this is the content of my first article.this is the content of my first article.this is the content of my first article.this is the content of my first article.this is the content of my first article.</p>
+            <p>this is the content of my first article.this is the content of my first article.this is the content of my first article.this is the content of my first article.this is the content of my first article.</p>`},
+ content3 :{
+    title: 'y should u cry4crey',
+    heading: 'sermons of leo',
+    date: 'aug 5, 1998',
+    content:` <p>
+                this is the content of my first article.this is the content of my first article.this is the content of my first article.this is the content of my first article.
+            </p>
+            <p>this is the content of my first article.this is the content of my first article.this is the content of my first article.this is the content of my first article.this is the content of my first article.this is the content of my first article.</p>
+            <p>this is the content of my first article.this is the content of my first article.this is the content of my first article.this is the content of my first article.this is the content of my first article.</p>`}
 };
 function CreateTemplate (data){
    var title = data.title;
